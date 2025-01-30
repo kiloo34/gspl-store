@@ -25,13 +25,13 @@ source venv/bin/activate,  # Windows: venv\Scripts\activate
 
 ## 5️⃣ Create a Superuser (For Admin Panel)
 
-Follow the prompts to set up your admin credentials.
+> Follow the prompts to set up your admin credentials.
 ```python manage.py createsuperuser```
 
 ## 6️⃣ Run the Development Server
 
 ```python manage.py runserver```
-The API will be available at http://127.0.0.1:8000/api/
+> The API will be available at http://127.0.0.1:8000/api/
 
 ### 🛠️ API Endpoints
 #### 🔑 Authentication
