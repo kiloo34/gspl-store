@@ -8,7 +8,7 @@ cd django-product-api
 ## 2️⃣ Create and Activate a Virtual Environment
 
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+source venv/bin/activate,  # Windows: venv\Scripts\activate
 
 ## 3️⃣ Install Dependencies
 
@@ -21,15 +21,11 @@ python manage.py migrate
 ## 5️⃣ Create a Superuser (For Admin Panel)
 
 python manage.py createsuperuser
-
 Follow the prompts to set up your admin credentials.
+
 ## 6️⃣ Run the Development Server
 
 python manage.py runserver
-
--   Docker Desktop
--   PHP 8.3+
--   Git
 
 The API will be available at http://127.0.0.1:8000/api/
 🛠️ API Endpoints
@@ -78,6 +74,6 @@ Authorization: Bearer your-jwt-token
 🔹 Features: Sorting, searching, and filtering by name, price, created_at, and updated_at.
 
 ## Developed by Robi Leksono (kiloo34)
-🔹 GitHub: github.com/kiloo34
-🔹 LinkedIn: linkedin.com/in/your-profile
+-   GitHub: github.com/kiloo34
+-   LinkedIn: [linkedin.com/in/your-profile](https://www.linkedin.com/in/robi-leksono-9483b11b4/)
 
