@@ -44,14 +44,14 @@ The API will be available at http://127.0.0.1:8000/api/
 - PUT	/api/products/<id>/	Update product details
 - DELETE	/api/products/<id>/	Soft delete a product
 
-🔍 Filtering & Pagination
-- Filter by Name (case-insensitive match)
+##### 🔍 Filtering & Pagination
+###### Filter by Name (case-insensitive match)
 - GET /api/products/?name=apple
 
-- Filter by Price Range
+###### Filter by Price Range
 - GET /api/products/?price_min=10000&price_max=50000
 
-- Pagination (Custom Page Size Support)
+###### Pagination (Custom Page Size Support)
 - GET /api/products/?page=2&page_size=5
 
 # 🔐 Authentication
