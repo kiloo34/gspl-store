@@ -28,28 +28,31 @@ Follow the prompts to set up your admin credentials.
 python manage.py runserver
 
 The API will be available at http://127.0.0.1:8000/api/
-🛠️ API Endpoints
-🔑 Authentication
--   Method	Endpoint	Description
-    POST	/api/token/	Obtain JWT token
-    POST	/api/token/refresh/	Refresh JWT token
-🛍️ Product Management
--   Method	Endpoint	Description
-    GET	/api/products/	Get all products (supports filtering & pagination)
-    POST	/api/products/	Create a new product (Authenticated users only)
-    GET	/api/products/<id>/	Get product by ID
-    PUT	/api/products/<id>/	Update product details
-    DELETE	/api/products/<id>/	Soft delete a product
+
+### 🛠️ API Endpoints
+
+#### 🔑 Authentication
+##### Method	Endpoint	Description
+- POST	/api/token/	Obtain JWT token
+- POST	/api/token/refresh/	Refresh JWT token
+
+#### 🛍️ Product Management
+##### Method	Endpoint	Description
+- GET	/api/products/	Get all products (supports filtering & pagination)
+- POST	/api/products/	Create a new product (Authenticated users only)
+- GET	/api/products/<id>/	Get product by ID
+- PUT	/api/products/<id>/	Update product details
+- DELETE	/api/products/<id>/	Soft delete a product
 
 🔍 Filtering & Pagination
--   Filter by Name (case-insensitive match)
-    GET /api/products/?name=apple
+- Filter by Name (case-insensitive match)
+- GET /api/products/?name=apple
 
--   Filter by Price Range
-    GET /api/products/?price_min=10000&price_max=50000
+- Filter by Price Range
+- GET /api/products/?price_min=10000&price_max=50000
 
--   Pagination (Custom Page Size Support)
-    GET /api/products/?page=2&page_size=5
+- Pagination (Custom Page Size Support)
+- GET /api/products/?page=2&page_size=5
 
 # 🔐 Authentication
 ## 1️⃣ Obtain a JWT Token
@@ -69,9 +72,8 @@ Include the token in the Authorization header:
 Authorization: Bearer your-jwt-token
 
 ## 🖥️ Admin Panel
-
-🔹 URL: http://127.0.0.1:8000/admin/
-🔹 Features: Sorting, searching, and filtering by name, price, created_at, and updated_at.
+- URL: http://127.0.0.1:8000/admin/
+- Features: Sorting, searching, and filtering by name, price, created_at, and updated_at.
 
 ## Developed by Robi Leksono (kiloo34)
 -   GitHub: github.com/kiloo34
