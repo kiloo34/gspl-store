@@ -2,35 +2,38 @@
 
 ## 1️⃣ Clone the Repository
 
-git clone https://github.com/your-username/django-product-api.git
-cd django-product-api
+```
+git clone https://github.com/kiloo34/gspl-store.git
+cd gspl-store
+```
 
 ## 2️⃣ Create and Activate a Virtual Environment
 
+```
 python -m venv venv
 source venv/bin/activate,  # Windows: venv\Scripts\activate
+```
 
 ## 3️⃣ Install Dependencies
 
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 ## 4️⃣ Apply Migrations
 
-python manage.py migrate
+```python manage.py makemigrations```
+```python manage.py migrate```
 
 ## 5️⃣ Create a Superuser (For Admin Panel)
 
-python manage.py createsuperuser
 Follow the prompts to set up your admin credentials.
+```python manage.py createsuperuser```
 
 ## 6️⃣ Run the Development Server
 
-python manage.py runserver
-
+```python manage.py runserver```
 The API will be available at http://127.0.0.1:8000/api/
 
 ### 🛠️ API Endpoints
-
 #### 🔑 Authentication
 ##### Method	Endpoint	Description
 - POST	/api/token/	Obtain JWT token
@@ -58,7 +61,6 @@ The API will be available at http://127.0.0.1:8000/api/
 ## 1️⃣ Obtain a JWT Token
 
     curl -X POST http://127.0.0.1:8000/api/token/ -d "username=admin&password=yourpassword"
-
     Response:
     {
         "access_token": "your-jwt-token",
@@ -78,4 +80,3 @@ Authorization: Bearer your-jwt-token
 ## Developed by Robi Leksono (kiloo34)
 -   GitHub: github.com/kiloo34
 -   LinkedIn: [linkedin.com/in/your-profile](https://www.linkedin.com/in/robi-leksono-9483b11b4/)
-
