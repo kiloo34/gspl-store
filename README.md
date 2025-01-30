@@ -1,0 +1,83 @@
+# 📌 Installation & Setup
+
+## 1️⃣ Clone the Repository
+
+```
+git clone https://github.com/kiloo34/gspl-store.git
+cd gspl-store
+```
+
+## 2️⃣ Create and Activate a Virtual Environment
+
+```
+python -m venv venv
+source venv/bin/activate,  # Windows: venv\Scripts\activate
+```
+
+## 3️⃣ Install Dependencies
+
+```pip install -r requirements.txt```
+
+## 4️⃣ Apply Migrations
+
+```python manage.py makemigrations```
+```python manage.py migrate```
+
+## 5️⃣ Create a Superuser (For Admin Panel)
+
+> Follow the prompts to set up your admin credentials.
+
+```python manage.py createsuperuser```
+
+## 6️⃣ Run the Development Server
+
+```python manage.py runserver```
+> The API will be available at http://127.0.0.1:8000/api/
+
+### 🛠️ API Endpoints
+#### 🔑 Authentication
+##### Method	Endpoint	Description
+- POST	/api/token/	Obtain JWT token
+- POST	/api/token/refresh/	Refresh JWT token
+
+#### 🛍️ Product Management
+##### Method	Endpoint	Description
+- GET	/api/products/	Get all products (supports filtering & pagination)
+- POST	/api/products/	Create a new product (Authenticated users only)
+- GET	/api/products/<id>/	Get product by ID
+- PUT	/api/products/<id>/	Update product details
+- DELETE	/api/products/<id>/	Soft delete a product
+
+##### 🔍 Filtering & Pagination
+###### Filter by Name (case-insensitive match)
+- GET /api/products/?name=apple
+
+###### Filter by Price Range
+- GET /api/products/?price_min=10000&price_max=50000
+
+###### Pagination (Custom Page Size Support)
+- GET /api/products/?page=2&page_size=5
+
+# 🔐 Authentication
+## 1️⃣ Obtain a JWT Token
+
+    curl -X POST http://127.0.0.1:8000/api/token/ -d "username=admin&password=yourpassword"
+    Response:
+    {
+        "access_token": "your-jwt-token",
+        "expires_in": 3600,
+        "token_type": "Bearer"
+    }
+
+## 2️⃣ Use JWT Token in API Requests
+
+Include the token in the Authorization header:
+Authorization: Bearer your-jwt-token
+
+## 🖥️ Admin Panel
+- URL: http://127.0.0.1:8000/admin/
+- Features: Sorting, searching, and filtering by name, price, created_at, and updated_at.
+
+## Developed by Robi Leksono (kiloo34)
+-   GitHub: github.com/kiloo34
+-   LinkedIn: [linkedin.com/in/robi-leksono](https://www.linkedin.com/in/robi-leksono-9483b11b4/)
