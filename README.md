@@ -80,4 +80,4 @@ Authorization: Bearer your-jwt-token
 
 ## Developed by Robi Leksono (kiloo34)
 -   GitHub: github.com/kiloo34
--   LinkedIn: [linkedin.com/in/your-profile](https://www.linkedin.com/in/robi-leksono-9483b11b4/)
+-   LinkedIn: [linkedin.com/in/robi-leksono](https://www.linkedin.com/in/robi-leksono-9483b11b4/)
