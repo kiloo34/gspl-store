@@ -25,7 +25,7 @@ source venv/bin/activate,  # Windows: venv\Scripts\activate
 
 ## 5️⃣ Create a Superuser (For Admin Panel)
 
-> Follow the prompts to set up your admin credentials.
+> Follow the prompts to set up your admin credentials.\
 ```python manage.py createsuperuser```
 
 ## 6️⃣ Run the Development Server
